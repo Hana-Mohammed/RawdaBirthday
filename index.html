@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Rawda's Birthday</title>
+<meta name="description" content="A little love letter, just for you.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ambient layers shared across the whole page -->
+<div class="ambient-hearts" id="ambientHearts" aria-hidden="true"></div>
+<div class="ambient-sparkles" id="ambientSparkles" aria-hidden="true"></div>
+
+<main id="app">
+
+  <!-- ============ SCREEN 1 — OPENING ============ -->
+  <section class="screen opening-screen" id="openingScreen">
+    <p class="eyebrow-line">for the one who has my whole heart</p>
+    <h1 class="hey-babe">Hey Babe</h1>
+
+    <div class="envelope-stage">
+      <div class="envelope" id="envelope">
+
+        <!-- the letter card that will slide up out of the envelope -->
+        <div class="letter-peek" id="letterPeek">
+          <span class="letter-peek-heart">♡</span>
+        </div>
+
+        <div class="envelope-back"></div>
+
+        <div class="envelope-side envelope-side-left"></div>
+        <div class="envelope-side envelope-side-right"></div>
+        <div class="envelope-bottom"></div>
+
+        <div class="envelope-flap" id="envelopeFlap"></div>
+
+        <button class="wax-seal" id="waxSeal" aria-label="Break the seal to open your letter">
+          <svg class="wax-heart" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <radialGradient id="waxGrad" cx="35%" cy="28%" r="80%">
+                <stop offset="0%" stop-color="#ff8fa3"/>
+                <stop offset="28%" stop-color="#e0384f"/>
+                <stop offset="70%" stop-color="#9c1327"/>
+                <stop offset="100%" stop-color="#6d0c1c"/>
+              </radialGradient>
+            </defs>
+            <path d="M50 88 C 18 66, 4 44, 4 26 C 4 10, 18 2, 32 6 C 42 9, 48 18, 50 24 C 52 18, 58 9, 68 6 C 82 2, 96 10, 96 26 C 96 44, 82 66, 50 88 Z" fill="url(#waxGrad)"/>
+          </svg>
+          <span class="seal-gloss"></span>
+        </button>
+      </div>
+      <p class="tap-hint">tap the seal</p>
+    </div>
+
+    <p class="subtext">You&rsquo;ve Got New Emails</p>
+  </section>
+
+  <!-- ============ SCREEN 2 — LETTER ============ -->
+  <section class="screen letter-screen" id="letterScreen">
+    <div class="letter-page" id="letterPage">
+      <div class="letter-page-glow"></div>
+      <p class="letter-salutation">My love,</p>
+      <p class="letter-text" id="letterText"></p>
+      <p class="letter-signoff" id="letterSignoff">— always yours</p>
+      <button class="btn-primary" id="seeAttachmentsBtn">
+        <span class="paperclip-mini">📎</span> See Attachments
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3 — ATTACHMENTS ============ -->
+<section class="screen attachments-screen" id="attachmentsScreen">
+
+  <!-- =========================
+       MAIN PHOTO — PHOTO OF US
+       ========================= -->
+  <article class="main-photo-section">
+
+    <figure class="attachment-hero">
+      <img
+        src="images/us.jpeg"
+        alt="Photo of us"
+        loading="lazy"
+      >
+    </figure>
+<p class="romantic-msg">
+  more life, morelove & more memories
+</p>
+  </article>
+
+
+  <!-- =========================
+       PERSON 01
+       ========================= -->
+  <article class="attachment" id="attachment01">
+
+    <div class="attachment-label">
+      <span class="paperclip-icon">📎</span>
+      <span>For You</span>
+    </div>
+
+
+    <!-- Two photos -->
+    <div class="gallery">
+
+      <button
+        class="gallery-item"
+        data-full="images/hanarawda1.jpeg"
+      >
+        <img
+          src="images/hanawrawda1.jpeg"
+          alt="Photo 1"
+          loading="lazy"
+        >
+      </button>
+
+      <button
+        class="gallery-item"
+        data-full="images/hanarawda2.jpeg"
+      >
+        <img
+          src="images/hanawrawda2.jpeg"
+          alt="Photo 2"
+          loading="lazy"
+        >
+      </button>
+
+    </div>
+
+
+    <!-- Message -->
+<p class="romantic-msg">
+  When I think about some of my favorite memories, you're always a part of them.
+  Thank you for your unwavering friendship; I cherish you today and always!
+  Happy birthday my fav human ❣️
+</p>
+```
+
+
+  </article>
+
+
+  <!-- =========================
+       PERSON 02
+       ========================= -->
+  <article class="attachment" id="attachment02">
+
+    <div class="attachment-label">
+      <span class="paperclip-icon">📎</span>
+      <span>For You Too</span>
+    </div>
+
+
+    <!-- Two photos -->
+    <div class="gallery">
+
+      <button
+        class="gallery-item"
+        data-full="images/yomnarawda1.jpeg"
+      >
+        <img
+          src="images/yomnarawda1.jpeg"
+          alt="Photo 1"
+          loading="lazy"
+        >
+      </button>
+
+      <button
+        class="gallery-item"
+        data-full="images/yomnarawda2.jpeg"
+        >
+        <img
+          src="images/yomnarawda2.jpeg"
+          alt="Photo 2"
+          loading="lazy"
+        >
+      </button>
+
+    </div>
+
+
+    <!-- Message -->
+    <p class="romantic-msg">
+      I want you to know that you’re a source of comfort for me, and having you in my life is one of the best things that has ever happened to me
+      I may not say it often but your presence means so much to me and always makes me feel at ease.
+      Happy birthday Rawdtyy Always the best girl ever 💞💞
+    </p>
+
+  </article>
+
+
+</section>
+
+
+
+  <!-- ============ SCREEN 4 — ENDING ============ -->
+  <section class="screen ending-screen" id="endingScreen">
+    <canvas id="confettiCanvas"></canvas>
+    <p class="ending-eyebrow">no more scrolling, just this</p>
+    <h2 class="ending-title">Happy Birthday <span class="heart-red">❤</span></h2>
+    <p class="ending-sub">here's to another year of us.</p>
+  </section>
+
+</main>
+
+
+
+<audio id="outroMusic" preload="auto">
+  <source src="music/outro.mp3" type="audio/mpeg">
+</audio>
+
+
+<button class="music-toggle" id="musicToggle" aria-label="Toggle music" aria-pressed="true">
+  <span class="music-icon">♪</span>
+</button>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Expanded photo">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
